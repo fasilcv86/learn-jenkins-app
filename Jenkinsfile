@@ -11,7 +11,10 @@ pipeline {
             }
             steps {
                 sh '''
-                    echo "test stage"
+                    echo "steps start.."
+                    ls -la
+                    node --version
+                    npm --version
                 '''
             }
         }
